@@ -167,7 +167,7 @@ jobs:
       - name: Compile
         run: haxelib run lime build mac --app-version="4.0.0-${{ github.run_id}}"
       - name: Publish Artifact
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v6
         with:
           name: macBuild
           path: export/release/macos/bin
@@ -204,7 +204,7 @@ jobs:
       - name: Compile
         run: haxelib run lime build html5 --app-version="4.0.0-${{ github.run_id}}"
       - name: Publish Artifact
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v6
         with:
           name: html5Build
           path: export/release/html5/bin
